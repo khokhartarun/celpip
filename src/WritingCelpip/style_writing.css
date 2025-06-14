@@ -1,0 +1,21 @@
+.flex-container {
+    display: flex;
+    align-items: stretch; /* Ensures both boxes stretch to the same height */
+    gap: 1rem; /* Adds space between the boxes */
+  }
+  
+  .left-box, .right-box {
+    flex: 1; /* Makes both boxes grow equally */
+    border: 1px solid #ddd; /* Optional: Adds a border for clarity */
+    padding: 1rem; /* Optional: Adds padding inside the boxes */
+  }
+  
+  .right-box {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  textarea {
+    flex-grow: 1; /* Makes the textarea take up the available vertical space */
+  }
+  

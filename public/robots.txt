@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://celpip.globalsteps.ca
+
+# Sitemaps
+Sitemap: https://celpip.globalsteps.ca/sitemap.xml

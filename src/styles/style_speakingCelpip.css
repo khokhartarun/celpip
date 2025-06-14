@@ -1,0 +1,252 @@
+.sidebar {
+    width: 20%;
+    padding: 1rem;
+    background-color: #ffffff;
+    height: 100vh;
+    font-weight: bold;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px; /* Optional: Add some spacing between list items */
+}
+
+.central-control {
+    width: 75%;
+    padding: 1rem;
+    margin-left: 1%;
+    text-align: justify;
+}
+
+@media (max-width: 600px) {
+  .central-control {
+      width: 90%; /* Increase width to 90% on mobile screens */
+  }
+}
+
+/*.central-control p {
+  color: black; /* Specifically changes paragraph text color to black
+}*/
+
+.task-list {
+    margin-top: 1rem;
+}
+  
+.task-list-item {
+margin-bottom: 1.5rem;
+}
+
+
+.task-list-item p {
+    margin: 0;
+    color: #333; /* Adjust color as needed */
+  }
+  
+  .task-list-item p strong {
+    font-weight: bold;
+  }
+  
+  .task-list-item p span {
+    font-weight: bold;
+  }
+  
+  .task-list-item .task-link {
+    color: #1a0dab; /* Blue color for the link */
+    text-decoration: underline;
+    font-weight: bold;
+    display: block;
+    margin-top: 0.2rem;
+  }
+
+  /* Back Button Styles */
+.back-button {
+    margin-bottom: 1rem;
+    display: inline-block;
+    color: #1a0dab; /* Blue color for the link */
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Prompt List Styles */
+.prompt-list {
+    margin-top: 1rem;
+}
+
+.prompt-item {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #1a0dab; /* Blue color for prompt titles */
+    cursor: pointer;
+}
+
+.prompt-detail-page {
+    padding: 2rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-top: 1rem;
+    background-color: #fff;
+  }
+  
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .prompt-detail-page {
+    padding: 0.2rem;  /* Apply smaller padding on mobile */
+  }
+}
+
+  .back-link {
+    color: #1a0dab;
+    text-decoration: underline;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1rem;
+  }
+  
+  .prompt-title {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  
+  .timer-section {
+    margin: 1rem 0;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+  }
+  
+  .timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+  
+  .note {
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .view-sample-answer {
+    display: block;
+    margin: 2rem auto; 
+    width: 40%;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    border: 1px solid #c0c0c0;
+    color: #333;
+    font-size: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  /* For back button on prompts detail page */
+  /* .back-button {
+    display: block;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    background-color: #b30000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+  } */
+
+  .practice-page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  .task-info {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .timing-info {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .timing-info span {
+    margin-right: 1rem;
+  }
+
+  .prev-button, .next-button {
+    padding: 0.5rem 0.5rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+    margin-right: 0.2rem;
+    margin-left: 0; /* Ensures minimal gap */
+  }
+  
+  .prev-button:disabled, .next-button:disabled {
+    background-color: #cccccc; /* Gray background when disabled */
+    color: #666666; /* Lighter text color when disabled */
+    cursor: not-allowed; /* Show 'not allowed' cursor when disabled */
+  }
+
+.important-keywords,
+.sample-answer {
+  margin-top: 1rem;
+}
+
+.no-select {
+  user-select: none; /* Prevents text selection */
+}
+
+.important-keywords label,
+.sample-answer label {
+  font-weight: bold;
+}
+
+.important-keywords p,
+.sample-answer p {
+  margin-top: 0.5rem;
+  color: #333;
+}
+
+.task6-options {
+  margin-top: 1rem;
+}
+
+.bullet-list {
+  list-style-type:disc; /* Display bullets */
+  padding-left: 1.5rem;  /* Add some padding to align bullets */
+}
+
+.task6-option-item {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.sample-answers-container {
+  margin-top: 5rem;
+}
+
+
+.custom-list {
+  padding-left: 20px;
+  list-style-type: disc; /* This ensures that bullet points are shown */
+}
+  

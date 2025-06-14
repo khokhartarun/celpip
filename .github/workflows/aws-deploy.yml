@@ -1,0 +1,36 @@
+name: Deploy to S3
+
+on:
+  push:
+    branches:
+      - main # This triggers the action when there's a push to the main branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v3
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "22" # Use the Node.js version your project requires
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build the project
+        run: |
+          npm run build
+          npm run postbuild
+
+      - name: Deploy to S3
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.CELPIP_APP_AWS_DEPLOYMENT_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.CELPIP_APP_AWS_DEPLOYMENT_SECRET_ACCESS_KEY }}
+          AWS_REGION: ${{ secrets.CELPIP_APP_AWS_DEPLOYMENT_S3_BUCKET_REGION }}
+          S3_BUCKET_NAME: ${{ secrets.CELPIP_APP_AWS_DEPLOYMENT_S3_BUCKET_NAME }}
+        run: |
+          aws s3 sync ./out s3://$S3_BUCKET_NAME --delete

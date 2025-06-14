@@ -1,0 +1,40 @@
+.speaking, .writing {
+    display: flex;
+}
+
+.speaking .sidebar {
+    width: 250px;
+    margin-right: 10px;
+}
+
+.speaking .central-control {
+    flex-grow: 1;
+    padding: 0.5rem;
+}
+
+.reading {
+    display: flex;
+}
+
+.reading .sidebar {
+    width: 250px;
+    margin-right: 10px;
+    background-color: #ffffff;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.reading .central-control {
+    flex-grow: 1;
+    padding: 0.5rem;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
